@@ -1,9 +1,9 @@
 .int{
     /* Fazer ao fim para deixar corpo e container iguais, na cor, etc */
-    background-color: aliceblue;
+    background-color:  #c9d0d6;
     color:currentColor;
-    height: 320px;
-    width: 270px;
+    height: 380px;
+    width: 280px;
     display: inline-table;
     border-radius: 12px;
     margin: 20px;
@@ -18,8 +18,7 @@
 }
 
 .int a img{
-    display: inline-flex;   
-    align-self: self-start;
+    display: inline-flexbox;   
     justify-self: left;   
     height: 30px;
     width: 30px;
@@ -42,8 +41,12 @@
     border-radius: 60%;
 }
 
+.int a{
+    display: flexbox;
+    flex-direction: column-reverse;
+}
 .container{
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.575);
     color:currentColor;
     height: 450px;
     width: 400px;    
@@ -60,8 +63,8 @@
 
 .container:hover{
     transform: scale(1.05);
-    background-color: rgba(231, 231, 231, 0.548);
-    color: aliceblue;
+    background-color: rgba(134, 134, 134, 0.575);
+    color:  #ffffff;
     
 }
 .container img{
@@ -79,11 +82,22 @@
 }
 
 body{
+    background-image: url('../img/Fundo.png'); /* Caminho relativo para a imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
     justify-items: center;
-    background: linear-gradient(50deg, #205c97, #73b8b8 ) ;
+    
 }
 
-
+.contato{
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: end;
+}
 
 
 .Botaorodape{
@@ -106,7 +120,8 @@ body{
     
 }
 .Botaorodape a{
-
+    display: flex;
+    justify-self: center;
     
     color: black;  
     text-decoration: none;
@@ -116,6 +131,8 @@ body{
 }
 
 .Botaorodape a:hover{
+    display: flex;
+    justify-self: center;
     color: rgb(194, 194, 255);
     transform: scale(1.02);
     
