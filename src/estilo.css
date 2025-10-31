@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(90deg, #f2f2f2, rgb(152, 152, 152)  );
+    margin: 0;
+    color:currentColor;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.container{
+    display: flex ;
+    background-color: rgb(225, 220, 220);
+    padding : 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: currentColor;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.container h2{
+    display: flex;
+    align-self: center;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container p{
+    display: flex;
+    align-self: center;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+input, button{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 0;
+}
+#enviar{
+    color:  rgb(225, 220, 220);
+    background-color: rgb(54, 74, 255);
+    width: 32%;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Comic Sans MS", cursive;
+    margin: 7px;
+}
+input, label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 4px
+
+}
+
+#senha{
+    width: 197px;
+    height: 18;
+    border-radius: 10px;
+    border: 0;
+    margin: 7px;
+}
+
+#user{
+    width: 197px;
+    height: 18;
+    border-radius: 10px;
+    border: 0;
+    margin: 7px;
+}
+
+#opcoes{
+    width: 197px;
+    height: 18;
+    border-radius: 10px;
+    border: 0;
+}
+

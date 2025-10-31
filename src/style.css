@@ -1,0 +1,129 @@
+.int{
+    /* Fazer ao fim para deixar corpo e container iguais, na cor, etc */
+    background-color: aliceblue;
+    color:currentColor;
+    height: 320px;
+    width: 270px;
+    display: inline-table;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.1s ease;
+
+}
+
+.int:hover{
+    transform: scale(1.05);
+    
+}
+
+.int a img{
+    display: inline-flex;   
+    align-self: self-start;
+    justify-self: left;   
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    margin: 7px;
+}
+.int h2{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.int p{
+    font-size: 12px;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+.int img{
+    height: 70px;
+    width: 70px;
+    border-radius: 60%;
+}
+
+.container{
+    background-color: aliceblue;
+    color:currentColor;
+    height: 450px;
+    width: 400px;    
+    border-radius: 12px;
+    margin: 20px;
+    padding: 40px;
+    display: flexbox;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.1s ease;
+    
+    
+}
+
+.container:hover{
+    transform: scale(1.05);
+    background-color: rgba(231, 231, 231, 0.548);
+    color: aliceblue;
+    
+}
+.container img{
+    height: 120px;
+    width: 120px;
+}
+.container p{
+    font-size: 14px;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+.container h2{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    justify-items: center;
+    background: linear-gradient(50deg, #205c97, #73b8b8 ) ;
+}
+
+
+
+
+.Botaorodape{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    justify-items: center;
+    align-items: center;
+    background:linear-gradient(160deg, #c8e4fc, #4bc7c7 ) ;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 5px 5px;
+    transition: transform 0.1s ease;
+    
+}
+.Botaorodape a{
+
+    
+    color: black;  
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.1s ease;
+    
+}
+
+.Botaorodape a:hover{
+    color: rgb(194, 194, 255);
+    transform: scale(1.02);
+    
+}
+
+.Botaorodape:hover{
+    color: rgb(194, 194, 255);
+    background: rgba(0, 0, 0, 0.253);
+    transform: scale(1.05);
+    
+}

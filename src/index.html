@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Fazer login</h2>
+        <form  action = "/login" method= "get">
+            <br>
+
+            <label for="user" >Usuario:</label>
+            <input type= "text" id= "user" name= "user">
+            <br>
+
+            <label for= "senha" >Senha:</label>
+            <input type= "password" id= "senha" name= "senha">
+            <br>
+
+            <label for="opcoes">Perfil: </label>
+            <select  id="opcoes" name="opcoes">
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+            </select>
+
+            <br>
+            <button type="submit" id="enviar" >entrar</button>
+        </form>
+
+
+
+
+    </div>
+
+</body>
+</html>
