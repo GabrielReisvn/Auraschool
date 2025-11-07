@@ -55,8 +55,8 @@ body{
 }
 
 br{
-    line-height: 12px;
-    content: "";
+    line-height: 8px;
+    content: " ";
 }
 
 
@@ -94,7 +94,7 @@ form{
    width: 400px; 
 }
 
-input, label{
+.container input, label{
     display: flex;
     justify-self: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -221,4 +221,81 @@ input, label{
     top: 0;
     left: 4px;
     font-size: 16px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+#atividade{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background: rgb(255, 255, 255);
+    width: 480px;
+    height: 18;
+    border-radius: 6px;
+    border: 0;
+    border-color: #1f2e4f;
+    margin: 7px;
+}
+
+.prof{
+    display: flex ;
+    background-color:rgba(201, 208, 214, 0.84);
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: currentColor;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.prof img{
+    align-self: center;
+    height: 120px;
+    width: 120px;
+}
+.prof h3{
+    color: #1f2e4f;
+    display: flex;
+    align-self: flex-start;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.prof h2{
+    color: #1f2e4f;
+    display: flex;
+    align-items: baseline;
+    align-self: center;
+    justify-self: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+
+.prof p{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    color: #1f2e4f;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.prof input, label{
+    display: flexbox;
+    justify-self: left;
+    align-self: baseline;
+    flex-wrap: wrap-reverse;
 }
