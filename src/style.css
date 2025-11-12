@@ -1,5 +1,4 @@
 .int{
-    /* Fazer ao fim para deixar corpo e container iguais, na cor, etc */
     background-color:  #c9d0d6;
     color:currentColor;
     height: 380px;
@@ -82,7 +81,7 @@
 }
 
 body{
-    background-image: url('../img/Fundo.png'); /* Caminho relativo para a imagem */
+    background-image: url('../img/Fundo.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -105,7 +104,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 60px;
     height: 30px;
-    text-align: center;
+    justify-content: center;
     display: flex;
     justify-self: center;
     align-self: center;
@@ -122,7 +121,6 @@ body{
 .Botaorodape a{
     display: flex;
     justify-self: center;
-    
     color: black;  
     text-decoration: none;
     border-radius: 4px;
@@ -131,8 +129,6 @@ body{
 }
 
 .Botaorodape a:hover{
-    display: flex;
-    justify-self: center;
     color: rgb(194, 194, 255);
     transform: scale(1.02);
     
@@ -140,7 +136,7 @@ body{
 
 .Botaorodape:hover{
     color: rgb(194, 194, 255);
-    background: rgba(0, 0, 0, 0.253);
+    background: rgba(138, 138, 138, 0.253);
     transform: scale(1.05);
     
 }

@@ -69,11 +69,11 @@ input, button{
 }
 #enviar{
     display: flex;
+    justify-content: center;
     align-self: center;
     justify-self: center;
-    
     color: currentColor;
-    background:linear-gradient(160deg, #c8e4fc, #4bc7c7 );
+    background:linear-gradient(160deg, #1B4B7B, #189FA0 );
     width: 32%;
     border-radius: 10px;
     border: 0;
@@ -84,8 +84,7 @@ input, button{
 }
 
 #enviar:hover{
-    color: rgb(194, 194, 255);
-    background: rgba(0, 0, 0, 0.473);
+    color: rgb(230, 230, 255);
     transform: scale(1.05);
     
 }
@@ -105,6 +104,7 @@ form{
 
 #senha{
     background: rgba(80, 80, 80, 0.336);
+    color: rgb(255, 255, 255);
     width: 197px;
     height: 18;
     border-radius: 10px;
@@ -113,7 +113,8 @@ form{
 }
 
 #user{
-    background: rgba(80, 80, 80, 0.336);
+    background: rgba(80, 80, 80, 0.479);
+    color: rgb(255, 255, 255);
     width: 197px;
     height: 18;
     border-radius: 10px;
@@ -124,7 +125,7 @@ form{
 #opcoes{
     display: flex;
     justify-self: center;
-    background: rgba(80, 80, 80, 0.336);
+    background: rgba(80, 80, 80, 0.479);
     width: 213px;
     padding: 7px;
     height: 30px;
@@ -132,7 +133,7 @@ form{
     border: 0;
 }
 
-/* --------------------------------------------------------------------------------------------- */
+/* -----------------------------------------Aluno---------------------------------------------------- */
 
 .atividade{
     display: flex ;
@@ -224,43 +225,38 @@ form{
 }
 
 
-/* ---------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------Professor---------------------------------------------------------- */
 
 #atividade{
-    display: flex;
+    
     justify-self: center;
     align-self: center;
-    background: rgb(255, 255, 255);
+    background: rgba(80, 80, 80, 0.479);
+    color: rgb(255, 255, 255);
     width: 480px;
     height: 18;
     border-radius: 6px;
     border: 0;
     border-color: #1f2e4f;
-    margin: 7px;
+    margin: 4px;
 }
 
 .prof{
     display: flex ;
     background-color:rgba(201, 208, 214, 0.84);
-    padding: 20px;
+    padding: 50px 30px;
     border-radius: 10px;
     width: 700px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 40px 0;
     flex-direction: column;
-    align-items: flex-start;
+    align-content: flex-start;
     color: currentColor;
     box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.2);
+    gap: 10px;
 }
 
-.prof img{
-    align-self: center;
-    height: 120px;
-    width: 120px;
-}
 .prof h3{
     color: #1f2e4f;
-    display: flex;
     align-self: flex-start;
     font-size: 16px;
     font-family: sans-serif;
@@ -270,7 +266,7 @@ form{
 
 .prof h2{
     color: #1f2e4f;
-    display: flex;
+    
     align-items: baseline;
     align-self: center;
     justify-self: center;
@@ -298,4 +294,49 @@ form{
     justify-self: left;
     align-self: baseline;
     flex-wrap: wrap-reverse;
+}
+
+
+.content-prof {
+    align-self: center;
+    justify-self: center;
+    background-color: #2670A6;
+    padding: 12px 7px;
+    border-radius: 6px;
+    height: 12px;
+    width: 242px;
+    height: 25px;
+    color: #ffffff;
+}
+.content-prof h5{
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+
+#prof-envio{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    color: currentColor;
+    background:linear-gradient(160deg, #1B4B7B, #189FA0 );
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Comic Sans MS", cursive;
+    margin: 7px;
+    margin-top: 12px;
+    transition: transform 0.1s ease;
+}
+#prof-envio:hover{
+    color: rgb(230, 230, 255);
+    transform: scale(1.05);
+    
 }
