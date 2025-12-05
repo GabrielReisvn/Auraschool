@@ -45,6 +45,7 @@
     flex-direction: column-reverse;
 }
 .container{
+    
     background-color: rgba(240, 248, 255, 0.575);
     color:currentColor;
     height: 450px;
@@ -52,9 +53,10 @@
     border-radius: 12px;
     margin: 20px;
     padding: 40px;
-    display: flexbox;
-    justify-items: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
     transition: transform 0.1s ease;
     
     
@@ -81,7 +83,7 @@
 }
 
 body{
-    background-image: url('../img/Fundo.png'); 
+    background-image: url('/fundo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -89,6 +91,11 @@ body{
     margin: 0;
     justify-items: center;
     
+}
+.itens-sobre{
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .contato{

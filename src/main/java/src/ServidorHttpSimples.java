@@ -40,11 +40,13 @@ public class ServidorHttpSimples {
         s.createContext("/avaliar", ServidorHttpSimples::avaliar); // Curti / não curti
         s.createContext("/deletar", ServidorHttpSimples::deletar); // Deletar atividade
         s.createContext("/estilo.css", t -> enviarArquivo(t, "estilo.css", "text/css"));
+        s.createContext("/style.css", t -> enviarArquivo(t, "style.css", "text/css"));
+
         s.createContext("/fundo.png", t -> enviarImagem(t, "Fundo.png"));
         s.createContext("/logo.png", t -> enviarImagem(t, "Logo.png"));
         s.createContext("/git.png", t -> enviarImagem(t, "Git.png"));
         s.createContext("/whats.png", t -> enviarImagem(t, "whats.png"));
-        s.createContext("/insta.png", t -> enviarImagem(t, "insta.png"));
+        s.createContext("/insta.jpg", t -> enviarImagem(t, "insta.jpg"));
         s.createContext("/kauateles.jpeg", t -> enviarImagem2(t, "kauateles.jpeg"));
         s.createContext("/Viana.jpeg", t -> enviarImagem2(t, "Viana.jpeg"));
         s.createContext("/Dudu.jpeg", t -> enviarImagem2(t, "Dudu.jpeg"));
@@ -71,7 +73,7 @@ public class ServidorHttpSimples {
 
         System.out.println("LOGIN: " + user + senha + opcao);
 
-        if (user.equals("ana") && senha.equals("123") && opcao.equals("aluno")) {
+        if (user.equals("aluno") && senha.equals("123") && opcao.equals("aluno")) {
             System.out.println("Acesso Autorizado");
             redirecionar(t, "/consumidor");
         } else if (user.equals("ariel") && senha.equals("laguna") && opcao.equals("professor")) {
