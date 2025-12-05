@@ -32,7 +32,8 @@ public class ServidorHttpSimples {
         HttpServer s = HttpServer.create(new InetSocketAddress(8082), 0);
 
         // Rotas básicas
-        s.createContext("/", t -> enviarArquivo(t, "index.html", "text/html"));  // Página inicial
+        s.createContext("/", t -> enviarArquivo(t, "index.html", "text/html"));// Página inicial
+        s.createContext("/sobre", t -> enviarArquivo(t, "sobre.html", "text/html"));
         s.createContext("/login", ServidorHttpSimples::login); // Processa login
         s.createContext("/produtor", ServidorHttpSimples::produtor); // Cadastro de atividades (só o professor pode)
         s.createContext("/consumidor", ServidorHttpSimples::consumidor);
@@ -42,6 +43,12 @@ public class ServidorHttpSimples {
         s.createContext("/fundo.png", t -> enviarImagem(t, "Fundo.png"));
         s.createContext("/logo.png", t -> enviarImagem(t, "Logo.png"));
         s.createContext("/git.png", t -> enviarImagem(t, "Git.png"));
+        s.createContext("/whats.png", t -> enviarImagem(t, "whats.png"));
+        s.createContext("/insta.png", t -> enviarImagem(t, "insta.png"));
+        s.createContext("/kauateles.jpeg", t -> enviarImagem2(t, "kauateles.jpeg"));
+        s.createContext("/Viana.jpeg", t -> enviarImagem2(t, "Viana.jpeg"));
+        s.createContext("/Dudu.jpeg", t -> enviarImagem2(t, "Dudu.jpeg"));
+        s.createContext("/MathiasRolaMurcha.jpeg", t -> enviarImagem2(t, "MathiasRolaMurcha.jpeg"));
 
         s.start();
         System.out.println("Servidor rodando em http://localhost:8082/");
@@ -286,6 +293,18 @@ public class ServidorHttpSimples {
             t.getResponseBody().write(bytes);
             t.close();
         }
+
+        private static void enviarImagem2 (HttpExchange t, String arquivo) throws IOException {
+            File f = new File("src/main/java/src/img/" + arquivo);
+
+            byte[] bytes = java.nio.file.Files.readAllBytes(f.toPath());
+            t.getResponseHeaders().add("Content-Type", "image/jpeg");
+            t.sendResponseHeaders(200, bytes.length);
+            t.getResponseBody().write(bytes);
+            t.close();
+        }
+
+
 
         // -------------------- Funções auxiliares --------------------
 

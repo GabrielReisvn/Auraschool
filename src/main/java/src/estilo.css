@@ -15,7 +15,7 @@ body{
 .container{
     display: flex ;
     background-color: #c9d0d6d7;
-    padding : 80px;
+    padding : 40px 80px;
     border-radius: 10px;
     width: 400px;
     margin-top: 60px;
@@ -78,6 +78,7 @@ input, button{
     width: 32%;
     border-radius: 10px;
     border: 0;
+    font-size: 14px;
     font-family: "Comic Sans MS", cursive;
     margin: 7px;
     margin-top: 12px;
@@ -104,7 +105,7 @@ form{
 }
 
 #senha{
-    background: rgba(80, 80, 80, 0.336);
+    background: rgba(80, 80, 80, 0.479);
     color: rgb(255, 255, 255);
     width: 197px;
     height: 18;
@@ -127,11 +128,30 @@ form{
     display: flex;
     justify-self: center;
     background: rgba(80, 80, 80, 0.479);
-    width: 213px;
+    width: 212px;
     padding: 7px;
-    height: 30px;
+    height: 32px;
     border-radius: 10px;
     border: 0;
+}
+
+footer{
+    display: flex;
+    margin: 7px;
+}
+footer a{
+    justify-self: center;
+    align-items: flex-start;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #000000;
+    text-decoration:solid;
+    transition: transform 0.1s ease;
+    
+}
+footer a :hover{
+    
+    transform: scale(1.1);
 }
 
 /* -----------------------------------------Aluno---------------------------------------------------- */
@@ -230,11 +250,11 @@ form{
 
 #atividade{
 
-    justify-self: center;
+    justify-self: flex-end;
     align-self: center;
     background: rgba(80, 80, 80, 0.479);
     color: rgb(255, 255, 255);
-    width: 480px;
+    width: 320px;
     height: 18;
     border-radius: 6px;
     border: 0;
@@ -242,11 +262,11 @@ form{
     margin: 4px;
 }
 #descricao{
-    justify-self: center;
+    justify-self: flex-end;
     align-self: center;
     background: rgba(80, 80, 80, 0.479);
     color: rgb(255, 255, 255);
-    width: 480px;
+    width: 320px;
     height: 18;
     border-radius: 6px;
     border: 0;
@@ -263,6 +283,7 @@ form{
     border: 0;
     border-color: #1f2e4f;
     margin: 4px;
+    margin-right: 153px;
 }
 .prof{
     display: flex;
@@ -365,12 +386,13 @@ form{
 
 .adic-atividades-prof{
     display: flex;
+    align-self: center;
     justify-content: center;
     align-items: center;
-    text-align: center
-    padding: 50px 30px;
+    text-align: center;
+    padding : 50px 30px;
     border-radius: 10px;
-    width: 700px;
+    width: 600px;
     margin: 40px 0;
     flex-direction: column;
     align-content: flex-start;
@@ -431,5 +453,21 @@ form{
 }
 
 .btn-dina-op{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    color: currentColor;
+    background:linear-gradient(160deg, #78a3ce, #49bebe );
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Comic Sans MS", cursive;
+    margin: 7px;
+    margin-top: 12px;
+    transition: transform 0.1s ease;
+}
 
+.btn-dina-op :hover{
+    transform: scale(1.08);
 }
