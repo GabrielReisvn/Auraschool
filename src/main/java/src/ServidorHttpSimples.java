@@ -126,6 +126,7 @@ public class ServidorHttpSimples {
 
             html.append("<div class=\"dina-ini").append(classeExtra).append("\">");
             html.append("<h2>Mural de Atividades</h2>");
+            html.append("</div>");
 
 
 
@@ -155,7 +156,7 @@ public class ServidorHttpSimples {
                     html.append("<p><strong>ID:</strong> ").append(id).append("</p>");
                     html.append("<p><strong>Nome:</strong> ").append(nome).append("</p>");
                     html.append("<p><strong>Descrição:</strong> ").append(desc).append("</p>");
-                    html.append("<p><strong>Data:</strong> ").append(data).append("</p>");
+                    html.append("<p><strong>Data de entrega:</strong> ").append(data).append("</p>");
                     html.append("<p><strong>Status:</strong> ").append(curtida).append("</p>");
                     
 
@@ -163,21 +164,21 @@ public class ServidorHttpSimples {
                     html.append("<form method=\"POST\" action=\"/avaliar\">");
                     html.append("<input type=\"hidden\" name=\"id\" value=\"").append(id).append("\">");
                     html.append("<input type=\"hidden\" name=\"acao\" value=\"Feito\">");
-                    html.append("<button type=\"submit\">Feito</button>");
+                    html.append("<button type=\"submit\" class=\"btn-dina-op\" >Feito</button>");
                     html.append("</form>");
 
                     // Botão NÃO CURTIR
                     html.append("<form method=\"POST\" action=\"/avaliar\">");
                     html.append("<input type=\"hidden\" name=\"id\" value=\"").append(id).append("\">");
                     html.append("<input type=\"hidden\" name=\"acao\" value=\"Não Feito\">");
-                    html.append("<button type=\"submit\">Não Feito</button>");
+                    html.append("<button type=\"submit\" class=\"btn-dina-op\" >Não Feito</button>");
                     html.append("</form>");
 
                     // Botão DELETAR
                     html.append("<form method=\"POST\" action=\"/deletar\">");
                     html.append("<input type=\"hidden\" name=\"id\" value=\"").append(id).append("\">");
                     html.append("<input type=\"hidden\" name=\"acao\" value=\"nao\">");
-                    html.append("<button type=\"submit\">Deletar</button>");
+                    html.append("<button type=\"submit\" class=\"btn-dina-op\" >Deletar</button>");
                     html.append("</form>");
 
                     html.append("</div>");
